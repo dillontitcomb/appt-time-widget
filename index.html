@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time Slot Widget</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+<style>
+    .sidebar {border-left:1px solid #ccc;margin-top:30px;min-height:600px;padding: 0 15px;}
+    .mb-15 {margin-bottom:15px;}
+    .mb-30 {margin-bottom:30px;}
+    .mx-w-400 {max-width:400px;}
+</style>
+<body>
+    <div class="container mt-30">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <h1 class="mb-30">Time Slot Widget</h1>
+
+                <h4>User Story:</h4>
+                <p class="mb-30">Ask a marketing manager I would like a widget created that is injected into the page that displays time slots for my booking application.  I believe that by putting this widget on our location pages will drive a higher conversion rate when showing time slots higher up in the users search funnel.  I need a developer to create a stand alone script that can be added to the page to drive this functionality. </p>
+
+                <h4>Instructions</h4>
+                <ul class="mb-30">
+                    <li>Build the widget below and inject it into this page in the #addContentHere selector found on this page</li>
+                    <li>Feel free to use any CSS or JS that is loaded into the DOM of this page</li>
+                    <li>If additonal CSS is needed add a CSS file upon delivery</li>
+                    <li>Use the data from the <a href="https://s3.amazonaws.com/wheelhouse-cdn/wheelhouse-www/assets/timeslotdata.json">API Link</a> found in the development requirements to populate the timeslots</li>
+                    <li>For the time slots use the first eleven time slots from the API</li>
+                    <li>For the "What we treat" and "How much will it cost" these are links just make them link to this page</li>
+                    <li>Make all the time slot buttons as well as the more button link to this page when clicked</li>
+                    <li>On devices with a screen larger than 991px the time slot buttons must be in columns of four but its up to the developer for tablet and mobile devices</li>
+                    <li>Once built and tested inject into this page and take a screen shot</li>
+                    <li>Hand off the JavaScript in a JS file along with any additional assets as well a screen shot of the wiget injected into the page</li>
+                    <li>Email results to <a href="mailto:drew@wheelhousedmg.com">drew@wheelhousedmg.com</a></li>
+                </ul>
+
+                <h4>Screen shot of widget to be built</h4>
+                <img class="img-responsive mx-w-400 mb-30" src="https://s3.amazonaws.com/wheelhouse-cdn/wheelhouse-www/assets/timeslot-screenshot.png" alt="mockup">
+
+                <div class="row">
+                    <!-- Inject widget here -->
+                    <div id="addContentHere"></div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 hidden-xs">
+                <div class="sidebar">
+                    <h4>Development requirements:</h4>
+                    <ul class="mb-30">
+                        <li>Must be responsive</li>
+                        <li>Must be multi browser compatible and support Internet Explorer 11</li>
+                        <li>Must make an API call and use this data <a href="https://s3.amazonaws.com/wheelhouse-cdn/wheelhouse-www/assets/timeslotdata.json">API Link</a></li>
+                    </ul>
+
+                    <h4>Deliverable:</h4>
+                    <ul>
+                        <li>Screen shot of final result</li>
+                        <li>hand off script that can be injected through the browsers console to complete the story</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
